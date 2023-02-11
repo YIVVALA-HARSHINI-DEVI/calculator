@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CALCUATOR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="calculatorJS.js"></script>
+    <link rel='stylesheet' type='text/css' href='calculatorCSS.css'>
+</head>
+<body>
+<div class="container">
+    <div class= "calculator">
+    <h3 style="padding-bottom:10px ;">YHD CALCULATOR</h3>
+    <form name="copy">
+    <!-- This input box shows the button pressed by the user in calculator. -->
+    <input type="text" class="screen" id="expression" name="answer" style="background-color: palevioletred;">
+    <input type="button" value="C" onclick="clearall()" style="background-color: limegreen;">
+    <br> <br>
+    <!-- Display the calculator button on the screen. -->
+    <!-- onclick() function display the number prsses by the user. -->
+    <input type = "button" style="background-color: lightcoral;" value = "1" onclick = "display('1') ">
+    <input type = "button" style="background-color: lightcoral;" value = "2" onclick = "display('2') ">
+    <input type = "button" style="background-color: lightcoral;" value = "3" onclick = "display('3') ">
+    <input type = "button" style="background-color: limegreen;" value = "/" onclick = "display('/') ">
+    <br> <br>
+  
+    <input type = "button" style="background-color: lightcoral;" value = "4" onclick = "display('4') ">
+    <input type = "button" style="background-color: lightcoral;" value = "5" onclick = "display('5') ">
+    <input type = "button" style="background-color: lightcoral;" value = "6" onclick = "display('6') ">
+    <input type = "button" style="background-color: limegreen;" value = "-" onclick = "display('-') ">
+    <br> <br>
+  
+    <input type = "button" style="background-color: lightcoral;" value = "7" onclick = "display('7') ">
+    <input type = "button" style="background-color: lightcoral;" value = "8" onclick = " display('8') ">
+    <input type = "button" style="background-color: lightcoral;" value = "9" onclick = " display('9') ">
+    <input type = "button" style="background-color: limegreen;" value = "+" onclick = " display('+') ">
+    <br> <br>
+
+    <input type = "button" style="background-color: lightcoral;" value = "." onclick = "display('.') ">
+    <input type = "button" style="background-color: lightcoral;" value = "0" onclick = "display('0') ">
+    <input type = "button" style="background-color: lightcoral;" value = "=" onclick = "solve()">
+    <input type = "button" style="background-color: limegreen;" value = "*" onclick = "display('*') ">
+    <br><br>
+
+    <input type= "button" value="backspace" onclick="copy.answer.value=copy.answer.value.slice(0,-1)" class="backspace">
+    <br> 
+    </form>
+    </div>
+</div>
+</body>
+</html>

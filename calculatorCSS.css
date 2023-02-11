@@ -1,0 +1,49 @@
+body{
+    color: black;
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding-top: 60px;
+    background: linear-gradient(to top, #33ccff 0%, #ff99cc 100%);
+}
+h1 {
+    text-align: center;
+    padding: 5px;
+    color: black;
+    
+    }
+.backspace{
+    width: 240px;
+    height : 40px;
+    border: 3px pink;
+    border-radius: 3px;
+    background-color: palevioletred;
+  }
+input
+  {
+  width: 50px;
+  height: 40px;
+  color: white;
+  border: 3px solid gray;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 17px;
+  font-weight: bold;
+  }
+.calculator
+  {
+  width: 350px;
+  height: 550px;
+  margin: auto;
+  border: 3px solid black;
+  border-radius: 5px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  } 
+.screen{
+  width: 180px;
+  border: 2px solid gray;
+  border-radius: 3px;
+  height: 50px;
+  margin: 5px;
+  }
